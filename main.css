@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #f44336;
+    --secondary-color: #4caf50;
+    --accent-color: #ffeb3b;
+    --font-title: 'Pacifico', cursive;
+    --font-heading: 'Archivo Black', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f44336, #ffeb3b, #4caf50);
+    font-family: var(--font-body);
+    color: #fff;
+    text-align: center;
+    /* background-image: url('assets/bg-palmeras.svg');
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 1rem;
+    background-image: url('assets/fondo-palmeras.svg');
+    background-repeat: repeat;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .logo {
+    width: 320px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -13rem;
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);    
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--accent-color);
+    letter-spacing: 0.5rem;
+    position: relative;
+    top: -1rem;
+    text-transform: uppercase;
+  }
+
+  .direccion {
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin-top: -14.2rem;
+  }
+
+  .date-time {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .icon-calendar {
+    font-size: 1.2rem;
+  }
+
+  .location {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .icon-location {
+    font-size: 1.2rem;
+    margin-top: 0.1rem;
+  }
+
+  .location-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .location-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+
+  .cta {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      margin: 1rem;
+    }
+  }

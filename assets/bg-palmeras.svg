@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <!-- Definición del patrón con dos palmeras estilizadas -->
+    <pattern id="palmeras" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <!-- Primera palmera -->
+      <g transform="translate(40, 140)">
+        <!-- Tronco -->
+        <path d="M0,0 L0,-60" stroke="#000" stroke-width="6" />
+        <!-- Frondas -->
+        <path d="M0,-60 L-30,-90" stroke="#000" stroke-width="4" />
+        <path d="M0,-60 L-10,-95" stroke="#000" stroke-width="4" />
+        <path d="M0,-60 L10,-95" stroke="#000" stroke-width="4" />
+        <path d="M0,-60 L30,-90" stroke="#000" stroke-width="4" />
+      </g>
+      <!-- Segunda palmera -->
+      <g transform="translate(140, 160) scale(0.8)">
+        <path d="M0,0 L0,-50" stroke="#000" stroke-width="5" />
+        <path d="M0,-50 L-20,-80" stroke="#000" stroke-width="3" />
+        <path d="M0,-50 L0,-85" stroke="#000" stroke-width="3" />
+        <path d="M0,-50 L20,-80" stroke="#000" stroke-width="3" />
+      </g>
+    </pattern>
+  </defs>
+  <!-- Fondo que repite el patrón -->
+  <rect width="100%" height="100%" fill="url(#palmeras)" />
+</svg>
