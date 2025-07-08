@@ -6,6 +6,7 @@
     --font-heading: 'Archivo Black', sans-serif;
     --font-body: 'Roboto', sans-serif;
     --font-rock-salt: 'Rock Salt', cursive;
+    --font-gochi-hand: 'Gochi Hand', cursive;
   }
 
   body {
@@ -22,7 +23,7 @@
     flex-direction: row;
     /* align-items: center; */
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 8rem);
     text-align: center;
     padding: 1rem;
     background-image: url('assets/fondo-palmeras.svg');
@@ -35,6 +36,10 @@
     /* background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
   }
 
   .logo {
@@ -46,8 +51,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: -13rem;
+    position: absolute;
+    top: 14rem;
   }
 
   h1 {
@@ -70,11 +75,27 @@
   }
 
   h3 {
-    font-family: var(--font-rock-salt);
+    /* font-family: var(--font-rock-salt); */
+    font-family: var(--font-gochi-hand);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: var(--accent-color);    
   }
+
+  .cholo-birthday {
+    font-family: var(--font-rock-salt);
+    letter-spacing: -0.1rem;
+    font-size: 2.5rem;
+    margin: 0; padding: 0;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    color: var(--secondary-color);
+    line-height: 1;
+    text-shadow:
+      0 0 8px #4caf50,
+      0 0 16px #ffeb3b
+  }
+
   .direccion h3{
     margin-bottom: 0rem;
   }
@@ -84,11 +105,11 @@
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 2rem;
-    margin-top: -16rem;
+    margin-top: -2.9rem;
   }
 
   .direccion-texto {
-    font-size: 1.25rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #fff;
     font-family: var(--font-body);
@@ -176,19 +197,19 @@
   }
 
   @media (max-width: 600px) {
+    body {
+      min-height: calc(100vh - 4rem);
+    }
     .container {
       width: calc(90vw - 4rem);
       padding: 2rem;
       /* background: none; */
     }
     .logo {
-      width: 70%;
+      width: 70vw;
     }
     .title {
-      top: -11.5rem;
-    }
-    .direccion {
-      margin-top: -15rem;
+      top: 58vw;
     }
   }
   
