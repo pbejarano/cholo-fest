@@ -83,7 +83,6 @@
   }
 
   .cholo-birthday {
-    /* font-family: var(--font-gochi-hand); */
     font-family: var(--font-rock-salt);
     letter-spacing: -0.1rem;
     font-size: 2.5rem;
@@ -92,6 +91,9 @@
     margin-top: 1.2rem;
     color: var(--secondary-color);
     line-height: 1;
+    text-shadow:
+      0 0 8px #4caf50,
+      0 0 16px #ffeb3b
   }
 
   .direccion h3{
@@ -107,7 +109,7 @@
   }
 
   .direccion-texto {
-    font-size: 1.25rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #fff;
     font-family: var(--font-body);
